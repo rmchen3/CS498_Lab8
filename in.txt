@@ -1,0 +1,8 @@
+Deliverable 1.2:
+If you have a 3-node Core Server cluster (using Raft protocol) and one of the nodes crashes, the database can still accept and commit new WRITE operations since Raft protocol requires a strict quorum meaning that transactions are officially committed when the primary servers reach consensus. So even though one node has crashed, there are still 2 nodes that can communicate with one another to create a valid strict majority.
+
+Deliverable 3.1:
+266 DB Hits
+
+Deliverable 3.3:
+7 DB Hits. Creating property indexes is critical for the starting points of graph traversals in order because without indexes you must scan every node (O(n)) to start traversing while if you have indexes then you can find a match quickly.
